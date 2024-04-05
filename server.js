@@ -11,17 +11,22 @@ const mainRoutes = require('./routes/main');
 const cors = require('cors');
 
 require('dotenv').config({ path: './config/.env' });
-
 app.use(
 	cors({
 		credentials: true,
 		origin: `${
 			process.env.NODE_ENV === 'production'
-				? 'https://mern-auth-template-example.herokuapp.com/' //your client side URL
+				? 'https://mern-auth-template-main.onrender.com' //your client side URL
 				: 'http://localhost:3000'
 		}`,
 	})
 );
+// app.use(
+// 	cors({
+// 	  credentials: true,
+// 	  origin: 'http://localhost:3000',
+// 	})
+//   );
 
 // Passport config
 require('./config/passport')(passport);

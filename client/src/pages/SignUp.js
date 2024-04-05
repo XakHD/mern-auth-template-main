@@ -115,9 +115,8 @@ function SignUp() {
 						required
 					/>
 					<div className='self-center mt-3'>
-						<button className='btn btn-primary'>Create User</button>	
+						<button className='btn btn-primary'>Create User</button>
 					</div>
-					
 				</form>
 				<div
 					className={
@@ -130,6 +129,5 @@ function SignUp() {
 		</div>
 	);
 }
-
 
 export default SignUp;
